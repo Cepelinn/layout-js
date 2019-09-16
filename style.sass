@@ -1,0 +1,1980 @@
+@charset "UTF-8"
+@import "_vars.sass"
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html,
+body
+  height: 100%
+
+body
+  font-family: $font
+  background-color: #ffffff
+  overflow-y: scroll
+
+
+input:focus,
+input:active,
+button:focus,
+button:active,
+summary:active,
+summary:focus,
+select:focus,
+select:active
+  outline: none
+
+::-webkit-scrollbar
+  width: 10px
+
+  &-track
+    background: #ffffff
+
+  &-thumb
+    background: #636363
+
+    &:hover
+      background: $rosy-pink
+
+  &-track-piece
+    background-color: #ffffff
+
+.pink
+  color: $rosy-pink
+
+.red
+  background-color: palevioletred
+
+.green
+  background-color: limegreen
+
+.blue
+  background-color: lightblue
+
+.container
+  width: 1141px
+  height: 100%
+  margin: 0 auto
+
+  &_wide
+    width: 1607px
+
+.wrapper
+  min-height: 100%
+  display: flex
+  flex-direction: column
+
+  &__inner
+    flex: 1
+
+.btn
+  display: block
+  text-align: center
+  text-decoration: none
+  padding: 12px 10px 12px 15px
+  border: 1px solid #eaeaea
+  line-height: 100%
+  color: #4a4a4a
+  background-color: #ffffff
+  font-size: 15px
+  font-weight: 400
+  letter-spacing: 0.38px
+  transition: all 0.3s
+
+  &:hover
+    background-color: #4a4a4a
+    border: solid 1px transparent
+    color: #ffffff
+    transition: all 0.3s
+
+  &_inverse
+    background-color: #4a4a4a
+    border: solid 1px transparent
+    color: #ffffff
+    transition: all 0.3s
+
+    &:hover
+      color: #4a4a4a
+      background-color: #ffffff
+      border-color: #eaeaea
+      transition: all 0.3s
+
+  &_pink
+    color: $rosy-pink
+    border-color: $rosy-pink
+    transition: all 0.3s
+
+    &:hover
+      background-color: $rosy-pink
+      border: solid 1px #ffffff
+      color: #ffffff
+      transition: all 0.3s
+
+  &_pink-inverse
+    border: 1px solid transparent
+    background-color: $rosy-pink
+    color: #ffffff
+    transition: all 0.3s
+
+    &:hover
+      background-color: #ffffff
+      border: solid 1px $rosy-pink
+      color: $rosy-pink
+      transition: all 0.3s
+
+  &__product
+    width: 100%
+    padding: 19px 0
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    margin-top: 11px
+
+    &:last-child
+      margin-bottom: 20px
+
+  &__single-product
+    width: 100%
+
+  &_checkout
+    margin-top: 17px
+    width: 100%
+
+.logo
+  text-transform: uppercase
+
+  &__href
+    text-decoration: none
+    display: flex
+    align-items: center
+
+  &__text
+    font-size: 27px
+    font-weight: 300
+    text-align: center
+    color: #222222
+    line-height: 19px
+    letter-spacing: 0.7px
+    margin-top: 5px
+    margin-left: 11px
+
+  &__span-text
+    font-weight: 900
+
+.dropdown-menu
+  display: block
+  z-index: 5
+  visibility: hidden
+  opacity: 0
+  position: absolute
+  width: 262px
+  border-radius: 5px
+  background-color: #ffffff
+  border: solid 1px #ececec
+  padding-right: 13px
+  padding-left: 13px
+  transition: all 0.3s
+
+  &:before
+    content: ""
+    display: block
+    position: absolute
+    top: -4px
+    width: 5px
+    height: 5px
+    border-top: solid 1px #eaeaea
+    border-left: solid 1px #eaeaea
+    transform: rotate(45deg)
+    background-color: #fff
+
+  &_header
+    position: absolute
+    top: 36px
+    left: -1px
+
+  &_my-cart
+    visibility: hidden
+    height: auto
+    overflow: scroll
+    max-height: 600px
+    margin-bottom: 20px
+    top: 42px
+    right: -49px
+
+    &:before
+      left: 40px
+
+  &_left-menu
+    display: flex
+    flex-direction: row
+    width: auto
+    height: auto
+    padding-bottom: 7.5px
+    transition: all 0.3s
+
+    &:before
+      left: 67px
+
+  &_center-menu
+    display: flex
+    left: -360px
+    flex-direction: row
+    width: auto
+    height: auto
+    padding-bottom: 7.5px
+    transition: all 0.3s
+
+    &:before
+      right: 50%
+
+  &_right-menu
+    display: flex
+    right: 1px
+    flex-direction: row
+    width: auto
+    height: auto
+    padding-bottom: 7.5px
+    transition: all 0.3s
+
+    &:before
+      right: 67px
+
+  &__wrap
+    display: flex
+    flex-direction: column
+
+    &_sub-menu
+      width: 235px
+      margin-left: 23px
+      margin-right: 23px
+
+      &:first-child
+        margin-left: 0
+
+      &:last-child
+        margin-right: 0
+
+  &__heading
+    color: #232323
+    font-size: 14px
+    font-weight: 400
+    line-height: 8px
+    text-transform: uppercase
+    letter-spacing: 0.35px
+    padding-bottom: 10px
+    border-bottom: 1px solid #e8e8e8
+    margin-top: 22px
+    margin-bottom: 6px
+
+  &__body
+    list-style: none
+    margin-left: 6px
+    margin-top: 1px
+
+    &_left-menu
+      margin-left: 0
+
+  &__href
+    text-transform: none
+    text-decoration: none
+    color: #4f4f4f
+    font-size: 14px
+    font-weight: 400
+    line-height: 28px
+    letter-spacing: 0.35px
+    transition: color 0.3s
+
+    &:hover
+      color: $rosy-pink
+      transition: color 0.3s
+
+  &__offer
+    width: 255px
+    height: 118px
+    position: relative
+    margin-top: 14.6px
+
+  &__sale-img
+    width: 100%
+    height: 100%
+    margin-left: -17px
+
+  &__offer-text
+    position: absolute
+    top: 55.9px
+    left: 157.4px
+    width: 71px
+    height: 45px
+    color: #ffffff
+    font-size: 22px
+    font-weight: 900
+    line-height: 28px
+    text-transform: uppercase
+    letter-spacing: 0.55px
+
+  &__product-card
+    display: flex
+    align-items: center
+    padding-top: 21px
+    padding-bottom: 19px
+    border-bottom: 1px solid #ededed
+    border-top: 1px solid transparent
+    border-left: 1px solid transparent
+    border-right: 1px solid transparent
+
+  &__product-img-wrap
+    display: block
+    width: 72px
+    height: 85px
+
+  &__product-card-img
+    height: 100%
+
+  &__product-card-info
+    display: flex
+    justify-content: space-between
+    padding-top: 10px
+    padding-bottom: 19px
+    flex-direction: column
+    margin-left: 14px
+    width: 143px
+
+  &__product-card-name
+    text-decoration: none
+    margin-bottom: 10px
+    color: #222222
+    font-size: 12px
+    font-weight: 700
+    text-transform: uppercase
+
+  &__product-card-rating
+    color: #e4af48
+    margin-bottom: 12px
+    font-size: 12px
+    font-weight: 400
+    text-transform: uppercase
+
+  &__product-card-details
+    width: 52px
+    height: 12px
+    color: $rosy-pink
+    font-size: 12px
+    font-weight: 400
+    text-transform: uppercase
+
+  &__product-del-btn-wrap
+    display: flex
+    justify-content: center
+    align-items: center
+
+  &__product-del-btn
+    width: 15px
+    height: 15px
+    background-color: #c0c0c0
+    border: none
+    border-radius: 50%
+    color: #ffffff
+    font-size: 15px
+    line-height: 15px
+    font-weight: 400
+    transition: background-color 0.3s
+
+    &:hover
+      background-color: $rosy-pink
+      transition: background-color 0.3s
+
+  &__products-price-wrap
+    display: flex
+    justify-content: space-between
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    margin-top: 19px
+    margin-bottom: 21px
+
+  &__products-price-text
+    text-transform: uppercase
+
+
+.dropdown-cart
+  &__header
+    width: 100%
+    text-align: center
+    margin-top: 20px
+
+
+.header
+  &__border
+    height: 100px
+    background-color: #ffffff
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 2
+    opacity: 0.96
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
+    border: 1px solid #ececec
+
+  &__menu-wrap
+    margin-top: 100px
+
+  &__panels-wrap
+    display: flex
+    align-items: center
+    margin: 0 auto
+    padding-top: 19px
+    padding-bottom: 24px
+
+  &__left-panel
+    display: flex
+
+  &__right-panel
+    display: flex
+    width: 100%
+    justify-content: flex-end
+    align-items: flex-end
+
+  &__my-cart
+    display: flex
+    align-items: flex-end
+    position: relative
+    max-height: 600px
+
+  &__my-cart-href-wrap
+    &:hover > .dropdown-menu
+      visibility: visible
+      opacity: 100
+      transition: all 0.3s
+
+  &__my-cart-href
+    position: relative
+    width: 100%
+    height: 100%
+
+  &__my-cart-img
+    margin-right: 26px
+
+  &__menu-element
+    position: relative
+
+    &:hover > .dropdown-menu
+      visibility: visible
+      opacity: 100
+      transition: all 0.3s
+
+  &__menu-href
+    display: block
+    padding: 19px 22px 22px 23px
+    line-height: 10px
+    text-decoration: none
+    font-size: 14px
+    font-weight: bold
+    color: #222222
+    text-transform: uppercase
+    border-bottom: 3px solid transparent
+    transition: all 0.3s
+
+    &:hover
+      border-bottom: 3px solid $rosy-pink
+      transition: all 0.3s
+
+  &__menu
+    list-style: none
+    display: flex
+    justify-content: center
+
+  &__search
+    display: flex
+    margin-top: 6.9px
+
+  &__search-category
+    margin-left: 37px
+    display: flex
+    position: relative
+    height: 38px
+
+    &:hover > .dropdown-menu
+      visibility: visible
+      opacity: 100
+      transition: all 0.3s
+
+  &__search-category-text
+    padding: 0 25px 0 15px
+    color: #222222
+    font-size: 14px
+    font-weight: 300
+    line-height: 36px
+    text-align: center
+    letter-spacing: 0.35px
+    border-radius: 3px 0 0 3px
+    border: 1px solid #e6e6e6
+    background-color: #f9f9f9
+    transition: background 0.3s
+
+    &:hover
+      background: #e9e9e9
+      transition: background 0.3s
+
+  &__search-input
+    height: 38px
+    width: 280px
+    padding: 14px 16px 14px 16px
+    line-height: 10px
+    border-left: none
+    border-right: none
+    border-top: 1px solid #e6e6e6
+    border-bottom: 1px solid #e6e6e6
+    background-color: #ffffff
+    letter-spacing: 0.3px
+
+    &:focus
+      outline: none
+      background-color: #f9f9f9
+
+  &__search-button
+    height: 38px
+    padding: 12px 10px 12px 11px
+    color: #a4a4a4
+    border: 1px solid #e6e6e6
+    border-radius: 0 3px 3px 0
+    background-color: #ffffff
+    font-size: 14px
+    font-weight: 400
+    line-height: 14px
+    letter-spacing: 0.35px
+    transition: background-color 0.3s
+
+    &:hover
+      transition: background-color 0.3s
+      background-color: #e9e9e9
+
+.breadcrumbs
+  background-color: #f5f0f1
+  height: 148px
+
+  &__content
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__heading
+    font-size: 24px
+
+  a
+    text-decoration: none
+    color: #636363
+    font-size: 14px
+    font-weight: 300
+    transition: color 0.3s
+
+    &:hover
+      color: $rosy-pink
+      transition: color 0.3s
+
+.banner
+  height: 613px
+  background-color: #e8e8e8
+  margin-bottom: 98px
+
+  &__content
+    width: 100%
+    height: 100%
+    background: url(img/banner-img.jpg) center -51px
+    display: flex
+    align-items: center
+
+  &__text
+    padding-left: 12px
+    border-left: 12px solid $rosy-pink
+
+    & h2
+      color: #222222
+      font-weight: 900
+      font-size: 59.95px
+      line-height: 45px
+      margin-bottom: 17px
+
+    & h3
+      color: #222222
+      font-weight: 900
+      font-size: 39.96px
+      line-height: 30px
+
+.categories
+  height: 823px
+
+  &__content
+    height: 100%
+    width: 100%
+    display: flex
+    justify-content: space-between
+
+  &__left
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+  &__right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+  &__big-block
+    background-color: #000000
+    position: relative
+    width: 560px
+    height: 542px
+
+    &:hover img
+      filter: brightness(0.4)
+      transition: filter 0.3s
+
+    &:hover .categories__info
+      background-color: #888888
+      transition: background-color 0.3s
+
+  &__small-block
+    background-color: #000000
+    position: relative
+    width: 560px
+    height: 261px
+
+    &:hover img
+      filter: brightness(0.4)
+      transition: filter 0.3s
+
+    &:hover .categories__info
+      background-color: #888888
+      transition: background-color 0.3s
+
+  &__info
+    position: absolute
+    padding: 16px 20px 16px 19px
+    top: 26px
+    background-color: #ffffff
+    transition: background-color 0.3s
+
+    & h3
+      color: #222222
+      font-size: 18px
+      line-height: 14px
+      font-weight: 900
+      margin-bottom: 13px
+
+    & h2
+      font-size: 30px
+      line-height: 23px
+      font-weight: 900
+
+.products
+  margin-top: 12px
+
+  &__content
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+
+  &__information-block
+    height: 51px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 59px
+
+  &__header
+    color: #222222
+    font-size: 30px
+    font-weight: 700
+    line-height: 23px
+    margin-bottom: 16px
+
+  &__info
+    color: #9f9f9f
+    font-size: 14px
+    font-weight: 400
+
+  &__items
+    width: 100%
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+  &__product-card
+    position: relative
+    width: 263px
+    height: 364px
+    margin-bottom: 36px
+
+    &:hover
+      box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16)
+      padding-bottom: 21px
+      transform: scale(1.02)
+      transition: all 0.3s
+
+    &:hover .products__product-add-wrap
+      opacity: 100
+      transition: opacity 0.3s
+
+  &__product-item-image
+    margin-bottom: 19px
+    width: 100%
+
+  &__product-add-wrap
+    display: block
+    opacity: 0
+    position: absolute
+    top: 70px
+    width: 123px
+    text-align: center
+    height: 39px
+    border: 1px solid #ffffff
+    color: #ffffff
+    line-height: 39px
+    transition: opacity 0.3s
+
+  &__product-add
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: transparent
+    border: none
+    color: #ffffff
+    width: 100%
+    height: 100%
+    z-index: 5
+    transition: all 0.3s
+
+    &:hover
+      background-color: rgba(255, 255, 255, 0.33)
+      transition: all 0.3s
+
+  &__add-another
+    display: block
+    height: 39px
+    border: 1px solid #ffffff
+    color: #ffffff
+    margin-top: 8px
+    line-height: 39px
+    padding-left: 12px
+    padding-right: 13px
+    transition: all 0.3s
+
+    &:hover
+      background-color: rgba(255, 255, 255, 0.33)
+      transition: all 0.3s
+
+  &__add-to-favourite
+    display: block
+    height: 39px
+    border: 1px solid #ffffff
+    color: #ffffff
+    margin-top: 8px
+    line-height: 39px
+    padding-left: 12px
+    padding-right: 13px
+    transition: all 0.3s
+
+    &:hover
+      background-color: rgba(255, 255, 255, 0.33)
+      transition: all 0.3s
+
+  &__product-item-card
+    transition: all 0.3s
+
+    &:hover .products__product-item-image
+      filter: brightness(0.3)
+      transition: all 0.3s
+
+  &__center-block
+    width: 100%
+    display: flex
+    justify-content: center
+
+  &__product-item-name
+    text-transform: uppercase
+    color: #222222
+    font-size: 13px
+    font-weight: 400
+    line-height: 10px
+    margin-bottom: 17px
+    margin-left: 15px
+
+  &__product-item-price
+    font-size: 13px
+    font-weight: 400
+    margin-left: 15px
+
+  &__product-buttons-wrap
+    display: flex
+    justify-content: space-between
+
+  &__product-navigation
+    height: 44px
+    margin-top: 43px
+    margin-bottom: 110px
+    display: flex
+    justify-content: space-between
+
+.pagination
+  height: 100%
+  border-radius: 3px
+  background-color: #ffffff
+
+  &__menu
+    display: flex
+    height: 100%
+    align-items: center
+    list-style: none
+    border: 1px solid #ebebeb
+
+  &__menu-element
+    display: flex
+    align-items: center
+
+  &__href
+    cursor: pointer
+    border: none
+    background-color: #ffffff
+    display: block
+    padding: 6px
+    text-decoration: none
+    height: 100%
+    color: #c4c4c4
+    font-size: 16px
+    font-weight: 300
+    transition: all 0.3s
+
+    &:hover
+      color: $rosy-pink
+      transition: color 0.3s
+
+    &_active
+      color: $rosy-pink
+      cursor: auto
+      line-height: 44%
+
+.product-main-block
+  &__product-wrap
+    display: flex
+    justify-content: space-between
+    padding-top: 59px
+
+.menu-sidebar
+  display: flex
+  flex-direction: column
+  width: 243px
+  margin-right: 49px
+  margin-bottom: 40px
+
+  &__partion
+    width: 243px
+    display: flex
+    flex-direction: column
+
+    & summary
+      width: 100%
+      display: flex
+      flex-direction: column
+
+    & summary::-webkit-details-marker
+      display: none
+
+    & a
+      text-decoration: none
+      display: block
+      color: #6f6e6e
+      font-size: 14px
+      font-weight: 400
+      line-height: 31px
+      transition: color 0.3s
+
+      &:hover
+        color: $rosy-pink
+        transition: color 0.3s
+
+  &__partion > .menu-sidebar__partion-summary:after
+    content: "⏵"
+    position: absolute
+    right: 0
+    color: $rosy-pink
+    font-size: 20px
+
+  &__partion-summary
+    font-size: 14px
+    font-weight: bold
+    line-height: 20px
+    color: $rosy-pink
+
+  & .menu-sidebar__partion-summary
+    position: relative
+    height: 37px
+    line-height: 37px
+    border-left: 5px solid $rosy-pink
+    border-bottom: 1px solid #ebebeb
+    padding-left: 11px
+
+  &__partion[open] > .menu-sidebar__partion-summary:after
+    content: "⏷"
+    position: absolute
+    right: 0
+    color: $rosy-pink
+    font-size: 20px
+
+.top-filter
+  height: 74px
+  width: 100%
+  display: flex
+  justify-content: space-between
+
+  &__header
+    display: block
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 700
+    line-height: 10px
+    margin-bottom: 25px
+
+  &__trend-block
+    display: flex
+    flex-direction: column
+    width: 235px
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 400
+
+  &__size-block
+    display: flex
+    flex-direction: column
+    width: 235px
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 400
+
+  &__filter-block
+    display: flex
+    justify-content: flex-start
+    flex-wrap: wrap
+    flex-direction: column
+    width: 235px
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 400
+
+  &__price-block
+    display: flex
+    flex-direction: column
+    width: 235px
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 400
+
+  & input[type="radio"]
+    display: none
+
+  & label
+    padding-left: 10px
+    padding-right: 10px
+    cursor: pointer
+    transition: color 0.3s
+    display: inline-flex
+
+    &:hover
+      color: $rosy-pink
+      transition: color 0.3s
+
+    &:active
+      color: $rosy-pink
+
+  &__checkbox
+    display: none
+
+    &:checked + .top-filter__checkbox-custom::before
+      content: ""
+      display: block
+      position: absolute
+      top: 2px
+      right: 2px
+      bottom: 2px
+      left: 2px
+      background: #f16d7f
+      border-radius: 2px
+
+  &__checkbox-custom
+    position: relative
+    width: 13px
+    height: 13px
+    border: 1px solid #ebebeb
+    border-radius: 1px
+    display: inline-flex
+    vertical-align: middle
+
+  &__label
+    margin-left: 3px
+    margin-right: 3px
+
+    &:hover
+      color: #f16d7f
+
+  &__price-range
+    display: flex
+    justify-content: space-between
+    line-height: 12px
+    margin-top: 17px
+
+  input[type=range]
+    height: 20px
+    -webkit-appearance: none
+    margin: 10px 0
+    width: 100%
+
+  input[type=range]:focus
+    outline: none
+
+  input[type=range]::-webkit-slider-runnable-track
+    width: 100%
+    height: 6px
+    cursor: pointer
+    background: #F16D7F
+    border-radius: 1px
+
+  input[type=range]::-webkit-slider-thumb
+    height: 14px
+    width: 14px
+    border-radius: 7px
+    background: #F16D7F
+    cursor: pointer
+    -webkit-appearance: none
+    margin-top: -4px
+
+  input[type=range]:focus::-webkit-slider-runnable-track
+    background: #F16D7F
+
+  &__price-range
+    display: flex
+    justify-content: space-between
+    line-height: 12px
+    margin-top: 17px
+
+  &__input-block
+    display: flex
+    justify-content: flex-start
+    flex-wrap: wrap
+
+.sorting-block
+  display: flex
+  align-items: center
+  height: 50px
+  background-color: #f3f3f3
+  margin-top: 41px
+  margin-bottom: 48px
+
+.sorting,
+.sorting select,
+.amount,
+.amount input
+  font-size: 14px
+  color: #6f6e6e
+  margin-left: 10px
+  padding-top: 10px
+  padding-bottom: 9px
+  padding-left: 13px
+  background-color: #ffffff
+  border: 1px solid #ebebeb
+
+.sorting-block
+  & select, label
+    width: 86px
+    padding: 10px 8px 9px 13px
+    border: 1px solid transparent
+    border-left: 1px solid #ebebeb
+    margin-left: 13px
+
+  &__amount input
+    width: 63px
+
+.feature
+  height: 529px
+  margin-top: 113px
+  margin-bottom: 97px
+
+  &__product
+    height: 341px
+    background-color: #222224
+
+  &__content
+    height: 100%
+    background-color: #222224
+    position: relative
+    display: flex
+
+  &__product-content
+    height: 100%
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+  &__info
+    position: absolute
+    width: 293px
+    top: 146px
+    left: 39px
+
+    & h2
+      color: #ffffff
+      font-size: 53.62px
+      font-weight: 700
+      line-height: 40px
+      margin-bottom: 13px
+
+    & h3
+      color: #ffffff
+      font-size: 32.17px
+      font-weight: 700
+      line-height: 25px
+
+  &__product-item
+    width: 294px
+    display: flex
+    justify-content: center
+    align-items: flex-start
+
+  &__product-item-info
+    width: 219px
+    height: 102px
+    margin-left: 30px
+    color: #fbfbfb
+    margin-top: 7px
+
+    &__product-item-header
+      font-size: 20px
+      font-weight: 700
+      margin-bottom: 21px
+      margin-left: 3px
+
+    &__product-item-text
+      font-size: 14px
+      font-weight: 300
+      line-height: 20px
+
+  &__left-block
+    height: 100%
+    width: 373px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+
+  &__item
+    width: 294px
+    display: flex
+    justify-content: center
+    align-items: flex-start
+
+  &__item-info
+    width: 219px
+    height: 102px
+    margin-left: 30px
+    color: #fbfbfb
+    margin-top: 7px
+
+    & h3
+      font-size: 20px
+      font-weight: 700
+      margin-bottom: 21px
+      margin-left: 3px
+
+    & p
+      font-size: 14px
+      font-weight: 300
+      line-height: 20px
+
+.single-product
+  width: 100%
+  margin-top: -44px
+  position: relative
+
+  &__content
+    width: 100%
+    height: 100%
+    padding-right: 261px
+    padding-left: 261px
+    background-color: #ffffff
+    border: solid 1px #eaeaea
+    text-align: center
+
+    hr
+      height: 1px
+      border: none
+      background-color: #eaeaea
+      margin-bottom: 63px
+
+  &__category-header-wrap
+    position: relative
+
+  &__category-header
+    display: inline-block
+    margin: 73px auto 17px auto
+    color: #f16d7f
+    font-size: 14px
+    font-weight: 700
+    line-height: 10px
+    padding-bottom: 15px
+    padding-left: 0
+    padding-right: 0
+    border-bottom: 1px solid #eaeaea
+
+  &__category-header-pink-block
+    position: absolute
+    width: 63px
+    height: 3px
+    background-color: $rosy-pink
+    left: 50%
+    margin-left: -31.5px
+    bottom: 16.5px
+  border-bottom: 1px solid #eaeaea
+
+  &__name
+    color: #4d4d4d
+    font-size: 18px
+    font-weight: 900
+    line-height: 14px
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 67px
+
+  &__text
+    color: #5e5e5e
+    font-size: 14px
+    font-weight: 300
+    line-height: 20px
+    text-align: center
+    margin-bottom: 28px
+
+  &__characteristics
+    display: flex
+    justify-content: space-around
+    margin-bottom: 37px
+
+  &__characteristic
+    display: flex
+
+  &__characteristic-header
+    color: #b9b9b9
+    font-size: 14px
+    font-weight: 700
+    line-height: 10px
+
+  &__characteristic-text
+    color: #2f2f2f
+    font-size: 14px
+    font-weight: 700
+    line-height: 10px
+
+  &__price
+    color: $rosy-pink
+    font-size: 24px
+    font-weight: 700
+    line-height: 24px
+    text-align: center
+    margin-bottom: 43px
+
+  &__buy-details
+    width: 538px
+    margin: 0 auto 122px auto
+
+  &__details-wrap
+    display: flex
+    justify-content: space-between
+
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      left: 30px
+      top: -8px
+      width: 14px
+      height: 14px
+      border-top: solid 1px #ececec
+      border-left: solid 1px #ececec
+      transform: rotate(45deg)
+      background-color: #fff
+
+  &__detail-container
+    color: #2f2f2f
+    font-size: 14px
+    font-weight: 700
+    line-height: 10px
+    text-align: left
+
+  &__select-characteristic
+    position: relative
+    font-size: 12px
+    line-height: 12px
+    padding-top: 12px
+    padding-bottom: 12px
+    padding-left: 17px
+    width: 144px
+    margin-top: 16px
+    margin-bottom: 28px
+    color: #bcbcbc
+    font-weight: 400
+    border: 1px solid #eaeaea
+
+    &:hover
+      background: #ebebeb
+
+    &:hover .single-product__select-characteristic-wrap
+      display: block
+      z-index: 2
+
+  &__select-characteristic-wrap
+    display: none
+    position: absolute
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17)
+    border: solid 1px #ececec
+    background-color: #fff
+    padding-bottom: 15px
+    padding-top: 15px
+    top: 35px
+
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      left: 30px
+      top: -8px
+      width: 14px
+      height: 14px
+      border-top: solid 1px #ececec
+      border-left: solid 1px #ececec
+      transform: rotate(45deg)
+      background-color: #fff
+
+  &__select-characteristic-menu
+    min-width: 100px
+    border-radius: 5px
+    background-color: #ffffff
+    padding-left: 13px
+    padding-right: 13px
+
+  &__select-characteristic-sub-menu
+    list-style: none
+    padding-left: 7px
+
+    a
+      width: 100%
+      display: block
+      text-decoration: none
+      font-size: 14px
+      line-height: 28px
+      color: #4f4f4f
+
+      &:hover
+        color: #f16d7f
+
+    li
+      text-align-last: left
+      display: flex
+      align-items: center
+
+  &__color-block
+    display: block
+    width: 12px
+    height: 12px
+    margin-right: 11px
+
+  &__detail-input
+    font-size: 12px
+    line-height: 12px
+    padding-top: 12px
+    padding-bottom: 12px
+    padding-left: 17px
+    width: 144px
+    margin-top: 16px
+    margin-bottom: 28px
+    color: #bcbcbc
+    font-weight: 400
+    border: 1px solid #eaeaea
+    display: block
+
+.also-like
+  margin-top: 119px
+  margin-bottom: 73px
+
+  &__header
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 72px
+
+.shopping-cart
+  &__table
+    width: 100%
+    margin-top: 90px
+    margin-bottom: 44px
+
+  &__table-header-cell
+    text-align: center
+    color: #222222
+    font-size: 13px
+    font-weight: 700
+    line-height: 12px
+
+    &_first
+      text-align: left
+
+  &__table-body-first-cell
+    text-align: left
+    width: 500px
+
+  &__table-body-cell
+    text-align: center
+    padding: 30px
+    color: #656565
+    font-size: 13px
+    font-weight: 400
+    line-height: 13px
+
+  &__table-body-input
+    width: 54px
+    height: 30px
+    padding: 10px
+
+  &__table-item
+    display: flex
+    margin-bottom: 22px
+    margin-top: 22px
+
+    h3
+      color: #222222
+      font-size: 13px
+      font-weight: 400
+      line-height: 11px
+      margin-bottom: 38px
+      margin-top: 13px
+
+    p
+      color: #6f6e6e
+      font-size: 13px
+      font-weight: 300
+      line-height: 15px
+
+      span
+        color: #575757
+        font-size: 13px
+        font-weight: 400
+
+    a
+      text-decoration: none
+      color: #222222
+
+  &__image
+    width: 100%
+
+  &__image-href
+    margin-right: 21px
+    width: 100px
+    height: 115px
+
+  &__delBtn
+    display: flex
+    justify-content: center
+    width: 16px
+    height: 16px
+    border: none
+    border-radius: 50%
+    background-color: #c0c0c0
+    color: #ffffff
+    text-align: center
+    line-height: 12px
+
+    &:hover
+      background-color: $rosy-pink
+
+  &__buttons
+    color: #4a4a4a
+    font-size: 14px
+    font-weight: 700
+    line-height: 12px
+
+  &__buttons-content
+    display: flex
+    justify-content: space-between
+
+.shopping-info
+  padding-top: 63px
+  padding-bottom: 79px
+
+  &__header
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    margin-bottom: 10px
+
+  &__content
+    display: flex
+    justify-content: space-between
+
+  &__address
+    width: 355px
+
+  &__coupon
+    width: 355px
+
+  &__coupon-text
+    color: #000000
+    font-size: 14px
+    font-weight: 300
+    line-height: 14px
+    margin-bottom: 10px
+    margin-top: 18px
+
+  &__checkout
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    height: fit-content
+    width: 360px
+
+    padding: 40px 41px 42px 44px
+    background-color: #f5f3f3
+
+  &__data-input
+    width: 100%
+    padding-top: 16px
+    padding-bottom: 16px
+    padding-left: 18px
+    margin-bottom: 10px
+    margin-top: 10px
+    border: 1px solid #eaeaea
+    color: #b1b1b1
+
+  &__data-select
+    width: 100%
+    padding-top: 16px
+    padding-bottom: 16px
+    padding-left: 18px
+    margin-bottom: 10px
+    margin-top: 10px
+    border: 1px solid #eaeaea
+    color: #b1b1b1
+
+  &__checkout-wrap
+    display: flex
+    margin-top: 14px
+    margin-bottom: 22px
+
+  &__checkout-sub-text
+    color: #4a4a4a
+    font-size: 11px
+    font-weight: 400
+
+  &__checkout-sub-price
+    color: #4a4a4a
+    font-size: 11px
+    font-weight: 400
+
+  &__checkout-grand-text
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+
+  &__checkout-grand-text
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+
+  &__checkout-hr
+    border: none
+    background-color: #e2e2e2
+    width: 100%
+    height: 1px
+
+.ordering
+  padding-top: 55px
+  padding-bottom: 93px
+
+  &__info-heading
+    border-top: 1px solid #e8e8e8
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    line-height: 72px
+    text-transform: uppercase
+
+    &::-webkit-details-marker
+      display: none
+
+  &__info-block[open] > .ordering__info-heading
+    border-top: 1px solid transparent
+
+  &__info-block[open] > .ordering__info-heading
+    border-bottom: 1px solid transparent
+
+  &__info-block[open] > .ordering__info-heading
+    margin-bottom: 5px
+
+  &__panels-wrap
+    display: flex
+    justify-content: space-between
+    padding-left: 35px
+    padding-bottom: 79px
+    padding-right: 166px
+
+  &__right-panel
+    width: 390px
+
+  &__text-block
+    margin-bottom: 27px
+
+  &__heading
+    height: 11px
+    color: #222222
+    font-size: 13px
+    font-weight: 400
+    text-transform: uppercase
+    margin-bottom: 15px
+
+  &__text
+    height: 12px
+    color: #b3b2b2
+    font-size: 13px
+    font-weight: 400
+    line-height: 20px
+
+  &__form
+    display: flex
+    flex-direction: column
+    margin-top: 25px
+
+  &__label
+    margin-top: 5px
+    margin-bottom: 5px
+
+.login-form
+  &__input
+    width: 390px
+    height: 45px
+    padding: 14px 14px 14px 24px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    margin-top: 9px
+    margin-bottom: 19px
+
+  &__submit-wrap
+    display: flex
+    margin-top: 32px
+
+  &__label
+    height: 11px
+    color: #222222
+    font-size: 13px
+    font-weight: 400
+    text-transform: uppercase
+    margin-bottom: 10px
+    line-height: 8px
+
+    &_important
+      color: #ff0d0d
+
+  &__recovery-password
+    display: block
+    margin-left: 32px
+    margin-top: 24px
+    text-decoration: none
+    color: #222222
+    font-size: 14px
+    font-weight: 400
+    line-height: 12px
+
+    &:hover
+      color: $rosy-pink
+
+.radio-form
+  margin-top: 34px
+  margin-left: 34px
+  margin-bottom: 30px
+
+  &__btn
+    position: absolute
+    opacity: 0
+
+    &:checked
+      + .radio-form__label
+        &:before
+          background-color: #555555
+          box-shadow: inset 0 0 0 2px #ffffff
+
+  &__label
+    display: block
+    height: 12px
+    margin-bottom: 20px
+    position: relative
+    color: #222222
+    font-size: 12px
+    font-weight: 400
+    text-transform: uppercase
+
+    &:before
+      content: ""
+      display: inline-block
+      width: 12px
+      height: 12px
+      position: absolute
+      border: 2px solid #555555
+      cursor: pointer
+      left: -28px
+      transition: all 250ms ease
+      border-radius: 100%
+
+.slider
+  background-color: #f7f7f7
+  position: relative
+  height: 777px
+  display: flex
+  justify-content: center
+  align-items: center
+
+  &__control-buttons-wrap
+    position: absolute
+    width: 100%
+    display: flex
+    justify-content: space-between
+    font-size: 24px
+    line-height: 14px
+    color: #ffffff
+
+  &__control-button-left
+    display: block
+    padding: 16px 18px 17px 21px
+    background-color: #d9d9d9
+
+    &:hover
+      background-color: $rosy-pink
+
+  &__control-button-right
+    display: block
+    padding: 16px 21px 17px 18px
+    background-color: #d9d9d9
+
+    &:hover
+      background-color: $rosy-pink
+
+.subscribe
+  height: 438px
+  background-image: url(img/subscribe-background.jpg)
+  background-color: #eeeeee
+  background-repeat: no-repeat
+
+  &__content
+    display: flex
+    height: 100%
+
+  &__left-panel
+    display: flex
+    justify-content: flex-start
+    width: 570px
+    height: 100%
+    padding-top: 111px
+    border-right: 1px solid #ffffff
+
+  &__right-panel
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 570px
+    padding-top: 148px
+
+    h2
+      color: rgb(34, 34, 36)
+      font-size: 24px
+      font-weight: 400
+      line-height: 23px
+      margin-bottom: 8px
+
+    h3
+      color: rgb(34, 34, 36)
+      font-size: 14px
+      font-weight: 400
+      line-height: 10px
+      margin-bottom: 35px
+
+  &__quote-img
+    width: 83px
+    height: 83px
+    margin-right: 28px
+
+  &__quote-text
+    margin-top: 12px
+
+    & p
+      width: 386px
+      color: rgb(34, 34, 36)
+      font-size: 16px
+      font-style: italic
+      line-height: 23px
+
+    & h5
+      margin-top: 19px
+      margin-left: 2px
+      font-size: 16px
+      font-weight: 700
+      line-height: 23px
+
+    & h6
+      color: #222224
+      font-size: 12px
+      font-weight: 300
+
+  &__quote-switch-wrap
+    margin-top: 41px
+    list-style: none
+    display: flex
+    justify-content: space-between
+    width: 140px
+    height: 4px
+
+  &__quote-switch
+    width: 38px
+    height: 100%
+    background-color: #d6d6d6
+    transition: background-color 0.3s
+
+    & a
+      display: block
+      width: 100%
+      height: 100%
+
+    &_active
+      background-color: $rosy-pink
+      transition: background-color 0.3s
+
+  &__input
+    color: rgb(34, 34, 36)
+    background-color: #e1e1e1
+    border: none
+    font-size: 14px
+    font-weight: 400
+    line-height: 46px
+    border-top-left-radius: 23px
+    border-bottom-left-radius: 23px
+    padding-left: 28px
+
+  &__button
+    color: #ffffff
+    background-color: $rosy-pink
+    border: 1px solid transparent
+    font-size: 14px
+    font-weight: 400
+    height: 46px
+    border-top-right-radius: 23px
+    border-bottom-right-radius: 23px
+    padding-left: 21px
+    padding-right: 20px
+    margin: -8px
+    transition: all 0.3s
+
+    &:hover
+      background-color: #ffffff
+      border: solid 1px $rosy-pink
+      color: $rosy-pink
+      transition: all 0.3s
+
+.footer
+  padding-top: 109px
+
+  &__content
+    display: flex
+
+  &__right-panel
+    width: 608px
+    display: flex
+    justify-content: space-between
+    padding-left: 64px
+
+  &__category
+    padding-top: 14px
+
+  &__category-name
+    font-size: 18px
+    font-weight: 700
+    line-height: 14px
+    margin-bottom: 31px
+
+  &__category-menu
+    & li
+      list-style: none
+      padding-top: 14px
+      padding-bottom: 14px
+
+    & li a
+      text-decoration: none
+      color: #898989
+      font-size: 16px
+      font-weight: 400
+      line-height: 10px
+      padding: 14px
+      margin: -14px
+      transition: all 0.3s
+
+      &:hover
+        background-color: #e8e8e8
+        transition: all 0.3s
+
+  &__brand-information
+    width: 428px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+  &__brand-information-text
+    margin-top: 29px
+    color: #898989
+    font-size: 14px
+    line-height: 22px
+    font-weight: 300
+
+.social-block
+  margin-top: 89px
+  display: flex
+  align-items: center
+  height: 79px
+  background-color: #e6e6e6
+
+  &__container
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &__icons
+    display: flex
+
+  &__button
+    background-color: #ffffff
+    height: 32px
+    width: 32px
+    text-align: center
+    margin: 4px
+    transition: background-color 0.3s
+
+    a
+      display: block
+      width: 100%
+      height: 100%
+      color: #b2b2b2
+      font-size: 16px
+      line-height: 32px
+      text-align: center
+      transition: background-color 0.3s
+
+      &:active
+        background-color: #000000
+
+    &:hover
+      background-color: $rosy-pink
+      transition: background-color 0.3s

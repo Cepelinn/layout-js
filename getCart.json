@@ -1,0 +1,24 @@
+{
+  "amount": 102,
+  "countGoods": 2,
+  "contents": [
+    {
+      "id_product": 1,
+      "product_name": "Mango T-shirt one",
+      "price": 50,
+      "quantity": 1,
+      "img": "img/product-item-1.jpg",
+      "color": "red",
+      "size": "S"
+    },
+    {
+      "id_product": 2,
+      "product_name": "Mango T-shirt two",
+      "price": 52,
+      "quantity": 1,
+      "img": "img/product-item-2.jpg",
+      "color": "red",
+      "size": "XXL"
+    }
+  ]
+}

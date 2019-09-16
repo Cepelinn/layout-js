@@ -1,0 +1,1004 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Product page</title>
+</head>
+<body>
+<div class="wrapper">
+  <div class="wrapper__inner">
+    <header class="header">
+      <div class="header__border">
+        <div class="header__panels-wrap container">
+          <div class="header__left-panel">
+            <div class="logo">
+              <a class="logo__href" href="index.html">
+                <img src="img/logo.png" alt="logo" class="logo__img">
+                <p class="logo__text">bran<span class="logo__span-text pink">d</span></p>
+              </a>
+            </div>
+            <form class="header__search">
+              <div class="header__search-category">
+                <span class="header__search-category-text">Browse</span>
+                <div id="browse" class="dropdown-menu dropdown-menu_header">
+                  <div class="dropdown-menu__wrap">
+                    <h3 class="dropdown-menu__heading">women</h3>
+                    <ul class="dropdown-menu__body">
+                      <li>
+                        <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-menu__href" href="products.html">Tops</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-menu__href" href="products.html">Blazers</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-menu__href" href="products.html">Denim</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-menu__href" href="products.html">Leggings/Pants</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-menu__href" href="products.html">Skirts/Shorts</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-menu__href" href="products.html">Accessories
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-menu__wrap">
+                    <h3 class="dropdown-menu__heading">men</h3>
+                    <ul class="dropdown-menu__body">
+                      <li>
+                        <a class="dropdown-menu__href" href="products.html">Tees/Tank tops</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-menu__href" href="products.html">Shirts/Polo's</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-menu__href" href="products.html">Sweaters</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-menu__href" href="products.html">Sweatshirts/Hoodies</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-menu__href" href="products.html">Blazers</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-menu__href" href="products.html">Jackets/Vests</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <input class="header__search-input" type="text" name="query" placeholder="Search for item...">
+              <button class="header__search-button">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+          <div class="header__right-panel">
+            <div class="header__my-cart">
+              <div class="header__my-cart-href-wrap">
+                <a class="header__my-cart-href" href="shopping-cart.html">
+                  <img class="header__my-cart-img" src="img/cart.svg" alt="cart">
+                </a>
+                <div class="dropdown-menu dropdown-menu_my-cart">
+                  <div id="dropdown-cart">
+                
+                  </div>
+                  <a href="checkout.html" class="btn btn_pink btn__product checkout">Checkout</a>
+                  <a href="shopping-cart.html" class="btn btn__product go-to-cart">Go to cart</a>
+                </div>
+              </div>
+              <button class="btn btn_pink-inverse">My Account&nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="header__menu-wrap">
+        <ul class="header__menu">
+          <li class="header__menu-element"><a class="header__menu-href" href="index.html">home</a>
+            <div class="dropdown-menu dropdown-menu_left-menu">
+              <div class="dropdown-menu__wrap dropdown-menu__wrap_sub-menu">
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Blazers</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Denim</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Leggings/Pants</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Skirts/Shorts</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Accessories
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown-menu__wrap dropdown-menu__wrap_sub-menu">
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                  </li>
+                </ul>
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown-menu__wrap dropdown-menu__wrap_sub-menu">
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                  </li>
+                </ul>
+                <div class="dropdown-menu__offer">
+                  <a href="single-page.html">
+                    <img class="dropdown-menu__sale-img" src="img/super-sale.jpg" alt="super sale">
+                    <span class="dropdown-menu__offer-text">super<br>sale!</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__menu-element"><a class="header__menu-href" href="products.html">men</a>
+            <div class="dropdown-menu dropdown-menu_left-menu">
+              <div class="dropdown-menu__wrap dropdown-menu__wrap_sub-menu">
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Blazers</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Denim</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Leggings/Pants</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Skirts/Shorts</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Accessories
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown-menu__wrap dropdown-menu__wrap_sub-menu">
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                  </li>
+                </ul>
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown-menu__wrap dropdown-menu__wrap_sub-menu">
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                  </li>
+                </ul>
+                <div class="dropdown-menu__offer">
+                  <a href="single-page.html">
+                    <img class="dropdown-menu__sale-img" src="img/super-sale.jpg" alt="super sale">
+                    <span class="dropdown-menu__offer-text">super<br>sale!</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__menu-element"><a class="header__menu-href" href="products.html">women</a>
+            <div class="dropdown-menu dropdown-menu_left-menu">
+              <div class="dropdown-menu__wrap dropdown-menu__wrap_sub-menu">
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Blazers</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Denim</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Leggings/Pants</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Skirts/Shorts</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Accessories
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown-menu__wrap dropdown-menu__wrap_sub-menu">
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                  </li>
+                </ul>
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown-menu__wrap dropdown-menu__wrap_sub-menu">
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                  </li>
+                </ul>
+                <div class="dropdown-menu__offer">
+                  <a href="single-page.html">
+                    <img class="dropdown-menu__sale-img" src="img/super-sale.jpg" alt="super sale">
+                    <span class="dropdown-menu__offer-text">super<br>sale!</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__menu-element"><a class="header__menu-href" href="products.html">kids</a>
+            <div class="dropdown-menu dropdown-menu_center-menu">
+              <div class="dropdown-menu__wrap dropdown-menu__wrap_sub-menu">
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Blazers</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Denim</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Leggings/Pants</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Skirts/Shorts</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Accessories
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown-menu__wrap dropdown-menu__wrap_sub-menu">
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                  </li>
+                </ul>
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown-menu__wrap dropdown-menu__wrap_sub-menu">
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                  </li>
+                </ul>
+                <div class="dropdown-menu__offer">
+                  <a href="single-page.html">
+                    <img class="dropdown-menu__sale-img" src="img/super-sale.jpg" alt="super sale">
+                    <span class="dropdown-menu__offer-text">super<br>sale!</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__menu-element"><a class="header__menu-href" href="products.html">accessorise</a>
+            <div class="dropdown-menu dropdown-menu_center-menu">
+              <div class="dropdown-menu__wrap dropdown-menu__wrap_sub-menu">
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Blazers</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Denim</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Leggings/Pants</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Skirts/Shorts</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Accessories
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown-menu__wrap dropdown-menu__wrap_sub-menu">
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                  </li>
+                </ul>
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown-menu__wrap dropdown-menu__wrap_sub-menu">
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                  </li>
+                </ul>
+                <div class="dropdown-menu__offer">
+                  <a href="single-page.html">
+                    <img class="dropdown-menu__sale-img" src="img/super-sale.jpg" alt="super sale">
+                    <span class="dropdown-menu__offer-text">super<br>sale!</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__menu-element"><a class="header__menu-href" href="products.html">featured</a>
+            <div class="dropdown-menu dropdown-menu_right-menu">
+              <div class="dropdown-menu__wrap dropdown-menu__wrap_sub-menu">
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Blazers</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Denim</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Leggings/Pants</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Skirts/Shorts</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Accessories
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown-menu__wrap dropdown-menu__wrap_sub-menu">
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="#">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                  </li>
+                </ul>
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown-menu__wrap dropdown-menu__wrap_sub-menu">
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                  </li>
+                </ul>
+                <div class="dropdown-menu__offer">
+                  <a href="single-page.html">
+                    <img class="dropdown-menu__sale-img" src="img/super-sale.jpg" alt="super sale">
+                    <span class="dropdown-menu__offer-text">super<br>sale!</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__menu-element"><a class="header__menu-href" href="products.html">hot deals</a>
+            <div class="dropdown-menu dropdown-menu_right-menu">
+              <div class="dropdown-menu__wrap dropdown-menu__wrap_sub-menu">
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Blazers</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Denim</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Leggings/Pants</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Skirts/Shorts</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Accessories
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown-menu__wrap dropdown-menu__wrap_sub-menu">
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                  </li>
+                </ul>
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown-menu__wrap dropdown-menu__wrap_sub-menu">
+                <h3 class="dropdown-menu__heading">women</h3>
+                <ul class="dropdown-menu__body dropdown-menu__body_sub-menu">
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Dresses</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Tops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Sweaters/Knits</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu__href" href="products.html">Jackets/Coats</a>
+                  </li>
+                </ul>
+                <div class="dropdown-menu__offer">
+                  <a href="single-page.html">
+                    <img class="dropdown-menu__sale-img" src="img/super-sale.jpg" alt="super sale">
+                    <span class="dropdown-menu__offer-text">super<br>sale!</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="breadcrumbs">
+      <div class="container breadcrumbs__content">
+        <h2 class="breadcrumbs__heading pink">THE BRAND</h2>
+        <nav>
+          <a href="index.html">HOME /</a>
+          <a href="products.html">MEN /</a>
+          <span class="pink">PRODUCT PAGE</span>
+        </nav>
+      </div>
+    </section>
+    <main>
+      <div class="container container_wide slider">
+        <img class="slider-image" src="img/slider-image-1.jpg" alt="slider image">
+        <div class="slider__control-buttons-wrap">
+          <a class="slider__control-button-left"><img src="img/to-the-left.png" alt="swipe to the left"></a>
+          <a class="slider__control-button-right"><img src="img/to-the-right.png" alt="swipe to the right"></a>
+        </div>
+      </div>
+      <section class="single-product">
+        <div class="container">
+          <div class="single-product__content">
+            <div class="single-product__category-header-wrap">
+              <h3 class="single-product__category-header">WOMEN COLLECTION </h3>
+              <div class="single-product__category-header-pink-block"></div>
+            </div>
+            <h2 class="single-product__name">Moschino Cheap And Chic</h2>
+            <p class="single-product__text">Compellingly actualize fully researched processes before proactive outsourcing.
+              Progressively syndicate collaborative architectures before cutting-edge services. Completely
+              visualize parallel core competencies rather than exceptional portals.</p>
+            <div class="single-product__characteristics">
+              <div class="single-product__characteristic">
+                <h4 class="single-product__characteristic-header">MATERIAL</h4>
+                <p class="single-product__characteristic-text">COTTON</p>
+              </div>
+              <div class="single-product__characteristic">
+                <h4 class="single-product__characteristic-header">DESIGNER:</h4>
+                <p class="single-product__characteristic-text">BINBURHAN</p>
+              </div>
+            </div>
+            <p class="single-product__price">&#36;561</p>
+            <hr>
+            <form class="single-product__buy-details" method="GET">
+              <div class="single-product__details-wrap">
+                <div class="single-product__detail-container">CHOOSE COLOR
+                  <div class="single-product__select-characteristic">
+                    Choose color
+                    <div class="single-product__select-characteristic-wrap">
+                      <div class="single-product__select-characteristic-menu">
+                        <ul class="single-product__select-characteristic-sub-menu">
+                          <li>
+                            <span class="single-product__color-block red"></span>
+                            <a href="#">Red</a>
+                          </li>
+                          <li>
+                            <span class="single-product__color-block green"></span>
+                            <a href="#">Green</a>
+                          </li>
+                          <li>
+                            <span class="single-product__color-block blue"></span>
+                            <a href="#">Blue</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-product__detail-container">CHOOSE SIZE
+                  <div class="single-product__select-characteristic">
+                    Choose size
+                    <div class="single-product__select-characteristic-wrap">
+                      <div class="single-product__select-characteristic-menu">
+                        <ul class="single-product__select-characteristic-sub-menu">
+                          <li>
+                            <a href="#">XXL</a>
+                          </li>
+                          <li>
+                            <a href="#">M</a>
+                          </li>
+                          <li>
+                            <a href="#">XS</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-product__detail-container">QUANTITY
+                  <input class="single-product__detail-input" type="number" min="1">
+                </div>
+              </div>
+              <input class="btn btn_pink btn__single-product" type="submit" value="Add to cart">
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="also-like">
+        <div class="container">
+      
+          <h2 class="also-like__header">You may also like</h2>
+          <div id="products__product-items" class="products__items">
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="subscribe">
+      <div class="center container">
+        <div class="subscribe__content">
+          <div class="subscribe__left-panel">
+            <img class="subscribe__quote-img" src="img/subscribe-quote-img.png" alt="greyscale landscape background">
+            <div class="subscribe__quote-text">
+              <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam
+                condimentum mattis neque sed pretium”</p>
+              <h5 class="pink">Bin Burhan</h5>
+              <h6>Dhaka, Bd</h6>
+              <ul class="subscribe__quote-switch-wrap">
+                <li class="subscribe__quote-switch"><a href=""></a></li>
+                <li class="subscribe__quote-switch subscribe__quote-switch_active"><a href=""></a></li>
+                <li class="subscribe__quote-switch"><a href=""></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="subscribe__right-panel">
+            <h2>SUBSCRIBE</h2>
+            <h3>FOR OUR NEWSLETTER AND PROMOTION</h3>
+            <form class="subscribe__form">
+              <input class="subscribe__input" type="email" placeholder="Enter Your Email">
+              <input class="subscribe__button" type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand-information">
+          <div class="logo">
+            <a class="logo__href" href="index.html">
+              <img src="img/logo.png" alt="logo" class="logo__img">
+              <p class="logo__text">bran<span class="logo__span-text pink">d</span></p>
+            </a>
+          </div>
+          <p class="footer__brand-information-text">Objectively transition extensive data rather than cross functional
+            solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly
+            syndicate an expanded array of processes and cross-unit partnerships.
+            
+            Efficiently plagiarize 24/365 action items and focused infomediaries.
+            Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+            
+            Objectively strategize seamless relationships via resource sucking testing procedures. Proactively cultivate
+            next-generation results for value-added methodologies. Dynamically plagiarize unique methodologies after
+            performance based methodologies. Monotonectally empower stand-alone mindshare rather than ubiquitous
+            opportunities. Dynamically orchestrate resource sucking scenarios after alternative synergy.
+            
+            Compellingly envisioneer corporate methods of empowerment before standards compliant technologies.
+            Objectively facilitate progressive.</p>
+        </div>
+        <div class="footer__right-panel">
+          <div class="footer__category">
+            <h2 class="footer__category-name pink">COMPANY</h2>
+            <ul class="footer__category-menu">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="#">Shop</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">How It Works</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__category">
+            <h2 class="footer__category-name pink">INFORMATION</h2>
+            <ul class="footer__category-menu">
+              <li>
+                <a href="#">Terms & Conditions</a>
+              </li>
+              <li>
+                <a href="#">Privacy policy</a>
+              </li>
+              <li>
+                <a href="#">How to buy</a>
+              </li>
+              <li>
+                <a href="#">How to sell</a>
+              </li>
+              <li>
+                <a href="#">Promotion</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__category">
+            <h2 class="footer__category-name pink">SHOP CATEGORY</h2>
+            <ul class="footer__category-menu">
+              <li>
+                <a href="products.html">Men</a>
+              </li>
+              <li>
+                <a href="products.html">Women</a>
+              </li>
+              <li>
+                <a href="products.html">Child</a>
+              </li>
+              <li>
+                <a href="products.html">Apparel</a>
+              </li>
+              <li>
+                <a href="products.html">Browse all</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="social-block">
+      <div class="container">
+        <div class="social-block__container">
+          <div class="copyright">&copy; 2018 Brand All Rights Reserved.</div>
+          <div class="social-block__icons">
+            <div class="social-block__button">
+              <a href="https://www.facebook.com/">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+            <div class="social-block__button">
+              <a href="https://twitter.com/">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+            <div class="social-block__button">
+              <a href="https://www.linkedin.com/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <div class="social-block__button">
+              <a href="https://www.pinterest.ru">
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+            </div>
+            <div class="social-block__button">
+              <a href="https://plus.google.com/">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/Product.js"></script>
+<script src="js/Cart.js"></script>
+<script src="js/single-page.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
